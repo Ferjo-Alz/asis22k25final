@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Capa_Vista_Presupuesto;
 
 namespace Interfac_V3
 {
@@ -57,8 +58,8 @@ namespace Interfac_V3
 
         private void btnPropio_Click(object sender, EventArgs e)
         {
-            //FormPrincipal forma = new FormPrincipal();
-            //forma.Show();
+            Frm_Principal forma = new Frm_Principal();
+            forma.Show();
         }
     }
 }
