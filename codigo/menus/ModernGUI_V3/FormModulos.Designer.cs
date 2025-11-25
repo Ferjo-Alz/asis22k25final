@@ -36,9 +36,9 @@ namespace Interfac_V3
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.btnPropio = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnSeguridad = new System.Windows.Forms.Button();
-            this.btnPropio = new System.Windows.Forms.Button();
             this.panelBarraSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -54,17 +54,19 @@ namespace Interfac_V3
             this.panelBarraSuperior.Controls.Add(this.btnMinimizar);
             this.panelBarraSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBarraSuperior.Location = new System.Drawing.Point(0, 0);
+            this.panelBarraSuperior.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelBarraSuperior.Name = "panelBarraSuperior";
-            this.panelBarraSuperior.Size = new System.Drawing.Size(278, 31);
+            this.panelBarraSuperior.Size = new System.Drawing.Size(208, 25);
             this.panelBarraSuperior.TabIndex = 0;
             this.panelBarraSuperior.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelBarraSuperior_MouseMove);
             // 
             // btnCerrar
             // 
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(242, 7);
+            this.btnCerrar.Location = new System.Drawing.Point(182, 6);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(16, 16);
+            this.btnCerrar.Size = new System.Drawing.Size(12, 13);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 1;
             this.btnCerrar.TabStop = false;
@@ -73,9 +75,10 @@ namespace Interfac_V3
             // btnMinimizar
             // 
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(223, 7);
+            this.btnMinimizar.Location = new System.Drawing.Point(167, 6);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(16, 16);
+            this.btnMinimizar.Size = new System.Drawing.Size(12, 13);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnMinimizar.TabIndex = 0;
             this.btnMinimizar.TabStop = false;
@@ -85,17 +88,19 @@ namespace Interfac_V3
             // 
             this.panelLogo.Controls.Add(this.pictureBox1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 31);
+            this.panelLogo.Location = new System.Drawing.Point(0, 25);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(278, 84);
+            this.panelLogo.Size = new System.Drawing.Size(208, 68);
             this.panelLogo.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(17, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(13, 9);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 60);
+            this.pictureBox1.Size = new System.Drawing.Size(188, 49);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -106,18 +111,33 @@ namespace Interfac_V3
             this.panelContenedor.Controls.Add(this.btnSalir);
             this.panelContenedor.Controls.Add(this.btnSeguridad);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelContenedor.Location = new System.Drawing.Point(0, 115);
+            this.panelContenedor.Location = new System.Drawing.Point(0, 93);
+            this.panelContenedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(279, 327);
+            this.panelContenedor.Size = new System.Drawing.Size(209, 266);
             this.panelContenedor.TabIndex = 2;
+            // 
+            // btnPropio
+            // 
+            this.btnPropio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPropio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPropio.Location = new System.Drawing.Point(0, 41);
+            this.btnPropio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPropio.Name = "btnPropio";
+            this.btnPropio.Size = new System.Drawing.Size(209, 41);
+            this.btnPropio.TabIndex = 2;
+            this.btnPropio.Text = "Modulo Presupuesto";
+            this.btnPropio.UseVisualStyleBackColor = true;
+            this.btnPropio.Click += new System.EventHandler(this.btnPropio_Click);
             // 
             // btnSalir
             // 
             this.btnSalir.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Location = new System.Drawing.Point(0, 277);
+            this.btnSalir.Location = new System.Drawing.Point(0, 225);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(279, 50);
+            this.btnSalir.Size = new System.Drawing.Size(209, 41);
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Salir del Sistema";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -130,34 +150,24 @@ namespace Interfac_V3
             this.btnSeguridad.Image = ((System.Drawing.Image)(resources.GetObject("btnSeguridad.Image")));
             this.btnSeguridad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSeguridad.Location = new System.Drawing.Point(0, 0);
+            this.btnSeguridad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSeguridad.Name = "btnSeguridad";
-            this.btnSeguridad.Size = new System.Drawing.Size(279, 50);
+            this.btnSeguridad.Size = new System.Drawing.Size(209, 41);
             this.btnSeguridad.TabIndex = 0;
             this.btnSeguridad.Text = "Modulo de Seguridad";
             this.btnSeguridad.UseVisualStyleBackColor = true;
             this.btnSeguridad.Click += new System.EventHandler(this.btnSeguridad_Click);
             // 
-            // btnPropio
-            // 
-            this.btnPropio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPropio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPropio.Location = new System.Drawing.Point(0, 50);
-            this.btnPropio.Name = "btnPropio";
-            this.btnPropio.Size = new System.Drawing.Size(279, 50);
-            this.btnPropio.TabIndex = 2;
-            this.btnPropio.Text = "Modulo Propio";
-            this.btnPropio.UseVisualStyleBackColor = true;
-            this.btnPropio.Click += new System.EventHandler(this.btnPropio_Click);
-            // 
             // FormModulos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(278, 442);
+            this.ClientSize = new System.Drawing.Size(208, 359);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panelLogo);
             this.Controls.Add(this.panelBarraSuperior);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormModulos";
             this.Text = "FormModulos";
             this.Load += new System.EventHandler(this.FormModulos_Load);
